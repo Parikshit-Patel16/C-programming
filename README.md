@@ -1,1 +1,1 @@
-In this repo...I am goinf to save all my codes and work for C.
+In this repo...I am going to save all my codes and work for C.
