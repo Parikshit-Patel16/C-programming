@@ -8,7 +8,7 @@ printf("prime factor of given number\n");
 while(n%2==0)
 {
 	printf("%d,",2);
-		n=n/2;
+	n=n/2;
 }
 for(i=3;i<n/2;i=i+2)
 {
@@ -21,8 +21,4 @@ for(i=3;i<n/2;i=i+2)
 }
 if(n>2)
 	printf("%d",n);
-
-
-
-
 }

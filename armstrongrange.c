@@ -1,25 +1,23 @@
+//Check armstrong numbers in given Range. Ex:- 153= 1^3+5^3+3^3
 #include <stdio.h>
 
 int main() {
-    int i,j;
-    int n,count=0,rem=0,sum=0;
+    int range;
+    int num,rem=0,sum=0;
     printf("Enter range:-");
-    scanf("%d",&i);
-    for(n=2;n<i;n++)
+    scanf("%d",&range);   
+    ftempr(num=2;num<range;num++) 
     {
-        int m=n;
-        int o=n;
-        while(o!=0)
+        int temp=num;
+        while(temp!=0)
         {
-            rem=o%10;
-            sum=sum+rem*rem*rem;
-            o=o/10;
-        }
-    if(sum==m)
+            rem=temp%10;    //rem=last digit 
+            sum=sum+rem*rem*rem; 
+            temp=temp/10;    //temp=number after removing last digit
+    if(sum==num)
     printf("%d,",sum);
     sum=0;
     rem=0;
-    //m=0;
     }
 return 0;
 }

@@ -1,41 +1,45 @@
+//In the given array.....replace the target value with 1 and then shift all 1s to the right size of the array without changing non 1s value's order.
 #include<stdio.h>
 void main()
 {
-	int n,i;
+	int size,i,target;
 	printf("enter size:");
-	scanf("%d",&n);
-	int a[n];
-	for(i=0;i<n;i++)
+	scanf("%d",&size);  //Size of array
+	int arr[size];   //Declare array
+	for(i=0;i<size;i++) //Define array
 	{
 		printf("Enter element %d:",i+1);
-		scanf("%d",&a[i]);
+		scanf("%d",&arr[i]);
 	}
-
-	for(i=0;i<n;i++)
+	printf("Enter Target Value");
+	scanf("%d",&target); //Enter target value to be replaced with 1
+	
+	for(i=0;i<size;i++)
 	{
-		if(a[i]==4)
+		if(arr[i]==target)
 		{
-			a[i]=1;
+			arr[i]=1;
 		}
 	}
-	for(i=0;i<n;i++)
+	//Loop to shift all 1s to the right side of the array
+	for(i=0;i<size;i++)
 	{
-		if(a[i]==1)
-		{
-			for(int j=i+1;j<n;j++)
+		if(arr[i]==1)   
+		{   //check for 1 from left and if we find 1...check next value which is not 1 and swap both values
+			for(int j=i+1;j<size;j++)
 			{
-				if(a[j]!=1)
+				if(arr[j]!=1)
 				{
-					a[i]=a[j];
-					a[j]=1;
+					arr[i]=arr[j];
+					arr[j]=1;
 					break;
 				}
 			}
 		}
 
 	}
-	for(i=0;i<n;i++)
+	for(i=0;i<size;i++)
 	{
-		printf("%d,",a[i]);
+		printf("%d,",arr[i]);
 	}
 }

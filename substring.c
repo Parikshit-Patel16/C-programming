@@ -1,11 +1,13 @@
+//find maximum length of substring with non repeating character.
+#include<stdio.h>
+#include<string.h>
 int lengthOfLongestSubstring(char * str){
     int n = strlen(str);
     if(n==0)
     {
         return 0;
     }
-    int i,k,j,max=0;
-    int c[n];
+    int i,k,j,max=0;s
     char b[n];
     for (int i = 0; i < n; i++)
     {
@@ -27,11 +29,20 @@ int lengthOfLongestSubstring(char * str){
                 b[count]=str[j];
             }
         }
-    c[i]=sum;
-    if(c[i]>max)
+    if(sum>max)
     {
-        max=c[i];
+        max=sum;
     }
     }
     return max;
+}
+
+
+int main()
+{
+	char str[20];
+	printf("Enter String");
+	gets(str);
+	int val=lengthOfLongestSubstring(str);
+	printf("Max:-%d",val);
 }
