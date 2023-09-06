@@ -1,3 +1,4 @@
+//read source file and convert all the lower case character to upper case and transfer it to destination file
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>

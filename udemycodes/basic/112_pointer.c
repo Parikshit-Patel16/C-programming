@@ -1,4 +1,4 @@
-//See value of address that pointer contain as well as the value at that address and then find square of number using pass by refernece method
+//See the value of address that pointer contain as well as the value at that address and then find square of number using pass by refernece method
 #include <stdio.h>
 void square(int *ptr)
 {
@@ -6,11 +6,11 @@ void square(int *ptr)
 }
 int main()
 {
-    int a,answer,*p=NULL;
+    int number,answer,*p=NULL;
     printf("Enter Value:-");
-    scanf("%d",&a);
-    p=&a;
-    printf("Address of a=%p\n",&a);
+    scanf("%d",&number);
+    p=&number;
+    printf("Address of number=%p\n",&number);
     printf("Value of P=%p\n",p);
     printf("Value at address that p is pointing to is=%d\n",*p);
     printf("Address of P is=%p\n",&p);

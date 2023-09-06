@@ -16,7 +16,7 @@ int main() {
         return 0;
     }
 	
-	//Method:-Short the string elements from assending order
+	//Method:-Short the string elements from ascending order
     for(i=0;i<strlen(str1)-1;i++)   
     {
         for(j=i+1;j<strlen(str1);j++)

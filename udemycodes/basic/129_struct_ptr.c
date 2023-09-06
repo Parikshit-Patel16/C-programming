@@ -1,3 +1,4 @@
+//Use structure pointer to assign values to structure variable
 #include<stdio.h>
 #include<stdlib.h>
 struct item

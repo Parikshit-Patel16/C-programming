@@ -1,4 +1,4 @@
-//ENUM
+//Define ENUM and print values currespond to it's variables
 #include<stdio.h>
 #include<stdlib.h>
 int main()

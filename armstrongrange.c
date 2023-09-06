@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 int main() {
-    int range;
-    int num,rem=0,sum=0;
+    int range,num,rem=0,sum=0;
     printf("Enter range:-");
     scanf("%d",&range);   
     ftempr(num=2;num<range;num++) 

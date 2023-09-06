@@ -1,3 +1,4 @@
+//Sort strings in ascending order from array of string
 #include<stdio.h>
 #include<string.h>
 void sort(char *arr[], int  n)

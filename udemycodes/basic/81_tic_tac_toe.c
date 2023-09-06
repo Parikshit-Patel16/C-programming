@@ -1,12 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h> //to take input from keyboard and display
-char board[10]={'0','1','2','3','4','5','6','7','8','9'};
+char board[10]={'0','1','2','3','4','5','6','7','8','9'};  //Array to represent box
 int choice,player;
 
+
+//Function to check winning condition 
 int checkwin()
 {
-	//check if game is over or not and if overn then check if anyone won the game or game is draw
+	//check if game is over or not and if over then check if anyone won the game or game is draw
 	if((board[1]==board[2] && board[1] == board[3]) || (board[4]==board[5] && board[4]==board[6]) || (board[7]==board[8] && board[7]==board[9]) || (board[1]==board[4] && board[1] == board[7]) || (board[2]==board[5] && board[2] == board[8]) || (board[3]==board[6] && board[3] == board[9]) || (board[1]==board[5] && board[1] == board[9]) || (board[3]==board[5] && board[3] == board[7]))
 	{
 		return 1;    //WIN and over
@@ -23,7 +25,7 @@ int checkwin()
 
 void display()
 {
-	system("cls");
+	system(cls);  //clears screen everytime the function called
 	printf("\n\nTic Tac Toe\n\n");
 	printf("Player 1(X) - Player 2(O)\n\n");
 	
@@ -61,12 +63,12 @@ void writeboard(char mark)
 int main()
 {
 	int status;
-	char mark;
+	char mark; 
 	player=2;
 	
 	do{
 	display();
-	player = (player==2)?1:2;
+	player = (player==2)?1:2; //Change player every time
 	printf("Player %d, Enter Choice: ",player);
 	scanf("%d",&choice);
 	mark=(player==1)?'X':'O';

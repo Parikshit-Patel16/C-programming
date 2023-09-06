@@ -1,3 +1,4 @@
+//Declare structure and assign values to it using different methods
 #include<stdio.h>
 int main()
 {
