@@ -1,27 +1,21 @@
-//6=1*6,6=2*3,6=3*2,6+6*1:- 1+2+3=6 so perfect
+//6=1*6,6=2*3,6=3*2,6=6*1:- 1+2+3=6 so perfect
 #include<stdio.h>
 void main()
 {
-	int n,m,j,i,sum=0,rem;
+	int num,range,i,sum=0,rem;
 	printf("Enter Range:-");
-	scanf("%d",&j);
-	for(m=1;m<=j;m++)
+	scanf("%d",&range);
+	for(num=1;num<=range;num++)
 	{
-	n=m;
-	for(i=1;i<=m/2;i++)
-	{
-	rem=n%i;
-	{
-		if(rem==0)
-		{
-			sum=sum+i;
-		}
-
-	}
-	}
-if(sum==m)
-	printf("%d-Perfect\n",m);
-rem=0;
-sum=0;
-}
+	    for(i=1;i<=num/2;i++)
+	    {
+	        rem=num%i;
+	            if(rem==0)
+		        sum=sum+i;
+	    }
+        if(sum==num)
+	    printf("%d-Perfect\n",num);
+    rem=0;
+    sum=0;
+    }
 }

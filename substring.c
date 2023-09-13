@@ -2,20 +2,20 @@
 #include<stdio.h>
 #include<string.h>
 int lengthOfLongestSubstring(char * str){
-    int n = strlen(str);
-    if(n==0)
+    int len = strlen(str);
+    if(len==0)
     {
         return 0;
     }
-    int i,k,j,max=0;s
-    char b[n];
-    for (int i = 0; i < n; i++)
+    int i,k,j,max=0,count,sum,flag;
+    char b[len];
+    for (int i = 0; i < len; i++)
     {
-        int count=0;
-        int sum=1;
-        int flag=0;
+        count=0;
+        sum=1;
+        flag=0;
         b[count]=str[i];
-        for(j=i+1;j<n;j++)
+        for(j=i+1;j<len;j++)
         {
             for(k=0;k<=count;k++)
             {

@@ -1,4 +1,4 @@
-//In the given array.....replace the target value with 1 and then shift all 1s to the right size of the array without changing non 1s value's order.
+//In the given array.....replace the target value with 1 and then shift all 1s to the right side of the array without changing order.
 #include<stdio.h>
 void main()
 {

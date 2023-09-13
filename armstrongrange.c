@@ -4,7 +4,7 @@
 int main() {
     int range,num,rem=0,sum=0;
     printf("Enter range:-");
-    scanf("%d",&range);   
+    scanf("%d",&range);   //0 to range
     ftempr(num=2;num<range;num++) 
     {
         int temp=num;
@@ -13,6 +13,7 @@ int main() {
             rem=temp%10;    //rem=last digit 
             sum=sum+rem*rem*rem; 
             temp=temp/10;    //temp=number after removing last digit
+		}
     if(sum==num)
     printf("%d,",sum);
     sum=0;
